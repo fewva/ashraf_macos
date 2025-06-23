@@ -56,6 +56,13 @@ const appstore = create_app_config({
 	resizable: true,
 });
 
+const portfolio = create_app_config({
+	title: 'Портфолио',
+	resizable: true,
+	height: 600,
+	width: 600,
+});
+
 export const apps_config = {
 	finder,
 	wallpapers,
@@ -65,4 +72,5 @@ export const apps_config = {
 	safari,
 
 	'system-preferences': systemPreferences,
+	portfolio,
 };
