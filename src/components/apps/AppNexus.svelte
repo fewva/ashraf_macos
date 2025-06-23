@@ -26,6 +26,10 @@
 	{#await import('./WallpaperApp/WallpaperSelectorApp.svelte') then { default: WallpaperSelector }}
 		<WallpaperSelector />
 	{/await}
+{:else if app_id === 'portfolio'}
+	{#await import('./Portfolio/Portfolio.svelte') then { default: Portfolio }}
+		<Portfolio />
+	{/await}
 {:else}
 	{#await import('./AppStore/AppStore.svelte') then { default: AppStore }}
 		<AppStore {app_id} />
